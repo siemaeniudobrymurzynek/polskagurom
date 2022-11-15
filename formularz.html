@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Formularz_CSS.css" type="text/css" />
+    <title>Pierwsza Podstrona</title>
+</head>
+
+<body>
+    <nav>
+
+        <h4><a href="../indeks.html" style="text-decoration: none">Powrót do strony głownej</a></h4>
+    </nav>
+    <div class="stronaZamowienia">
+
+        <form class="form" name="form" method="post" action="mail.php3">
+            <fieldset>
+                <legend>
+                    <h2>FORMULARZ ZAMÓWIENIA</h2>
+                </legend>
+                <h3 class="panel-title">Podaj dane do wysyłki</h3>
+                Imię<br>
+                <input type="text" placeholder="Proszę uzupełnić pole" name="imie" maxlength="40" required=""><br>
+                Nazwisko<br>
+                <input type="text" placeholder="Proszę uzupełnić pole" name="nazwisko" maxlength="40" required=""><br>
+                Miasto<br>
+                <input type="text" placeholder="Proszę uzupełnić pole" name="miasto"><br>
+                Kod Pocztowy<br>
+                <input type="text" placeholder="Proszę uzupełnić pole" name="kod_pocztowy" id="storedInput4"
+                    maxlength="6" required=""><br>
+                Ulica <br>
+                <input type="text" placeholder="Proszę uzupełnić pole" name="ulica" maxlength="80"
+                    required=""><br>
+                Nr domu <br>
+                <input type="text" placeholder="Proszę uzupełnić pole" name="nrDomu"  maxlength="80"
+                    required=""><br>
+                Nr mieszkania <br>
+                <input type="text" placeholder="Proszę uzupełnić pole" name="ulica" id="storedInput7" maxlength="80"><br>
+                Mail<br>
+                <input type="text" placeholder="Proszę uzupełnić pole" name="email" id="storedInput8" maxlength="40"
+                    required=""><br>
+                Telefon <br>
+                <input type="text" placeholder="Opcjonalnie" name="telefon" id="storedInput9" maxlength="25">
+                <br>
+                <label for="faktura">Wystawić fakturę?</label>
+                <input type="checkbox" name="Muzyka" id="faktura" value="faktura"><br>
+                <h3 class="panel-title">Wybierz sposób dostawy</h3>
+                <input type="radio" name="dostawa" id="dostawa1" value="dostawa1"><label for="dostawa1">Kurier</label
+                    for="dostawa1"><br>
+                <input type="radio" name="dostawa" id="dostawa2" value="dostawa2"><label
+                    for="dostawa2">Paczkomat</label><br>
+                <h3 class="panel-title">Wybierz metodę płatności</h3>
+                <div id="paymentMethod">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="sposob_platnosci" value="przelew_bankowy" id="P2">
+                            <div>
+                                <span
+                                    data-original-title="Wybierając opcję przelew bankowy, otrzymasz na podany przez Ciebie e-mail nr konta na który należy przelać należność. Przesyłka zostanie wysłana po odnotowaniu wpłaty na konto."
+                                    data-toggle="tooltip" data-placement="top">
+                                    <img src="../images/blik.jpg">
+                                    <figcaption>BLIK</figcaption>
+                                    <br>
+                                </span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio mg-bottom-0">
+                        <label>
+                            <input type="radio" name="sposob_platnosci" value="dotpay" id="P1">
+                            <div>
+                                <span
+                                    data-original-title="Wybierając opcję płatności DotPay Twoje zamówienie zostanie prawdopodobnie zrealizowane szybciej, ponieważ otrzymamy natychmiast potwierdzenie wpłaty co umożliwi nam wysyłkę nawet tego samego dnia - pod warunkiem, że zamówienie zostanie złożone przed godz. 10-tą."
+                                    data-toggle="tooltip" data-placement="top">
+                                    <img src="../images/karta%20platnicza.jpg">
+                                    <figcaption>Płatność kartą</figcaption>
+                                </span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <h3 class="panel-title">Uwagi do zamówienia</h3>
+                <textarea name="tresc" placeholder="Uwagi do zamówienia" rows="5" cols="40"></textarea><br>
+                <input type="submit" name="submit" value="wyślij">
+            </fieldset>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
