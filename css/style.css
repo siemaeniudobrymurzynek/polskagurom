@@ -24,7 +24,7 @@ aside{
 .header-img {
     position: relative;
     height: 300px;
-    background-image: url(file:///C:/Users/studentwftims.LAB/Desktop/HTML%20KB/images/t%C5%82o.jpg);
+    background-image: url(../images/t%C5%82o.jpg);
     background-size: cover;
     background-position: 0 50%;
 }
@@ -87,6 +87,6 @@ aside{
     margin: 10px 10px 10px 1500px;
     text-align: right;
     box-align: right;
-    background-image: url(file:///C:/Users/studentwftims.LAB/Desktop/HTML%20KB/images/aside.jpg);
+    background-image: url(..images/aside.jpg);
 }
 
